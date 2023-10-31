@@ -1,6 +1,6 @@
 # fcm_example
 
-## Let's play
+## Getting Started
 
 Create a [firebase](https://console.firebase.google.com/project/) project.
 
@@ -26,39 +26,31 @@ To make the google-services.json config values accessible to Firebase SDKs, you 
 
 Add the plugin as a dependency to your project-level build.gradle.kts file:
 
-Root-level (project-level) Gradle file (<project>/build.gradle.kts):
+Root-level (project-level) Gradle file (<project>/build.gradle):
+
+```
+dependencies {
+        ...
+        classpath 'com.google.gms:google-services:4.4.0'
+    }
+```
+
+Then, in module (app-level) Gradle file (<project>/<app-module>/build.gradle):
 
 ```
 plugins {
-// ...
-
-// Add the dependency for the Google services Gradle plugin
-id("com.google.gms.google-services") version "4.4.0" apply false
-
-}
-```
-
-Then, in your module (app-level) build.gradle.kts file, add both the google-services plugin and any Firebase SDKs that you want to use in your app:
-
-Module (app-level) Gradle file (<project>/<app-module>/build.gradle.kts):
-
-```
-plugins {
-  id("com.android.application")
-
+  
   // Add the Google services Gradle plugin
-  id("com.google.gms.google-services")
-
-  ...
+  id "com.google.gms.google-services"
 }
 
 dependencies {
   // Import the Firebase BoM
-  implementation(platform("com.google.firebase:firebase-bom:32.4.1"))
+    implementation platform('com.google.firebase:firebase-bom:32.4.1')
 
   // TODO: Add the dependencies for Firebase products you want to use
   // When using the BoM, don't specify versions in Firebase dependencies
-  implementation("com.google.firebase:firebase-analytics-ktx")
+  //implementation("com.google.firebase:firebase-analytics-ktx")
 
 
   // Add the dependencies for any other desired Firebase products
