@@ -1,6 +1,6 @@
 # fcm_example
 
-##Let's play
+## Let's play
 
 Create a [firebase](https://console.firebase.google.com/project/) project.
 
