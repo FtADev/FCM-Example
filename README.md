@@ -27,6 +27,7 @@ To make the google-services.json config values accessible to Firebase SDKs, you 
 Add the plugin as a dependency to your project-level build.gradle.kts file:
 
 Root-level (project-level) Gradle file (<project>/build.gradle.kts):
+
 ```
 plugins {
 // ...
