@@ -96,3 +96,5 @@ What should we do if we want to receive a notification when app is in foreground
 
 Just follow [this commit](https://github.com/FtADev/FCM-Example/commit/23bc2f58b405085def4785dc0e44e25c9bef9015)!
 
+Thanks to [HeyFlutter](https://www.youtube.com/watch?v=k0zGEbiDJcQ)
+
