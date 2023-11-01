@@ -11,7 +11,7 @@ class NotificationScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Push Notifications'),
+        title: const Text('Notification Screen'),
       ),
       body: Center(child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
