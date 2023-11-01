@@ -81,3 +81,12 @@ After filling the fields click on send test message
 Here you can add your token (That we were printing on the code) to target that specific device and click on add icon.
 
 put the app in the background (or terminate it) and click on test!
+
+## Routing
+
+If you want to route to a specific screen by clicking on notification, you can see these commits:
+
+[Add screens](https://github.com/FtADev/FCM-Example/commit/15f934c6974b19840c3202416d31eb6faa991ae8)
+
+[Handle Messages](https://github.com/FtADev/FCM-Example/commit/8914a8cdc8275cca64b35324bed14537b2045957)
+
