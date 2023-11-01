@@ -60,5 +60,24 @@ dependencies {
 
 After adding the plugin and the desired SDKs, sync your Android project with Gradle files.
 
-##
+## Second part
 
+After adding `firebase_api` and changing `main` method after [this commit](https://github.com/FtADev/FCM-Example/commit/4979ec2c8b77e8bf328e074421b6bb11d1dbf157)
+
+you can push a notification from your firebase console 
+
+Go to your project page
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
+
+After filling the fields click on send test
+
+![img_5.png](img_5.png)
+
+Here you can add your token (That we were printing on the code) to target that specific device and click on add icon.
+
+put the app in the background (or terminate it) and click on test!
