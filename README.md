@@ -60,9 +60,9 @@ dependencies {
 
 After adding the plugin and the desired SDKs, sync your Android project with Gradle files.
 
-## Second part
+## Send Background Notification
 
-After adding `firebase_api` and changing `main` method after [this commit](https://github.com/FtADev/FCM-Example/commit/4979ec2c8b77e8bf328e074421b6bb11d1dbf157)
+After adding `firebase_api` and changing `main` method in [first commit](https://github.com/FtADev/FCM-Example/commit/a7e8b03663afd963c8756678d9266b1414126f83) and [second commit](https://github.com/FtADev/FCM-Example/commit/4979ec2c8b77e8bf328e074421b6bb11d1dbf157)
 
 you can push a notification from your firebase console 
 
@@ -74,7 +74,7 @@ Go to your project page
 
 ![img_4.png](img_4.png)
 
-After filling the fields click on send test
+After filling the fields click on send test message
 
 ![img_5.png](img_5.png)
 
