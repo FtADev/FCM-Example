@@ -92,9 +92,7 @@ If you want to route to a specific screen by clicking on notification, you can s
 
 ## Local Notifications
 
-What should we do if we want to recieve a notification when app is in foreground?
+What should we do if we want to receive a notification when app is in foreground?
 
 Just follow [this commit](https://github.com/FtADev/FCM-Example/commit/23bc2f58b405085def4785dc0e44e25c9bef9015)!
-
-Note: There are two changing on `firebase_api.dart` that is not in newer version of `flutter_local_notifications`, so you should change it!
 

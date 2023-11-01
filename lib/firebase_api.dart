@@ -72,17 +72,16 @@ class FirebaseApi {
   }
 
   Future initLocalNotifications() async {
-    // const iOS = IOSInitializationSettings(); // This should be changed in newer version
+    const iOS = DarwinInitializationSettings();
     const android = AndroidInitializationSettings('@drawable/ic_launcher');
-    const settings = InitializationSettings(android: android, /*iOS: iOS*/);
+    const settings = InitializationSettings(android: android, iOS: iOS);
 
     await _localNotifications.initialize(
       settings,
-      // This should be changed in newer version
-      // onSelectNotification: (payload) {
-      //   final message = RemoteMessage.fromMap(jsonDecode(payload.toString()));
-      //   handleMessage(message);
-      // }
+      onDidReceiveNotificationResponse: (NotificationResponse payload) {
+        final message = RemoteMessage.fromMap(jsonDecode(payload.payload.toString()));
+        handleMessage(message);
+      }
     );
 
     final platform = _localNotifications.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
