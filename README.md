@@ -1,4 +1,4 @@
-# fcm_example
+# Firebase Cloud Messaging Example
 
 ## Getting Started
 
@@ -89,4 +89,12 @@ If you want to route to a specific screen by clicking on notification, you can s
 1. [Add screens](https://github.com/FtADev/FCM-Example/commit/15f934c6974b19840c3202416d31eb6faa991ae8)
 
 2. [Handle Messages](https://github.com/FtADev/FCM-Example/commit/8914a8cdc8275cca64b35324bed14537b2045957)
+
+## Local Notifications
+
+What should we do if we want to recieve a notification when app is in foreground?
+
+Just follow [this commit](https://github.com/FtADev/FCM-Example/commit/23bc2f58b405085def4785dc0e44e25c9bef9015)!
+
+Note: There are two changing on `firebase_api.dart` that is not in newer version of `flutter_local_notifications`, so you should change it!
 
