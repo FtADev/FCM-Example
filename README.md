@@ -86,7 +86,7 @@ put the app in the background (or terminate it) and click on test!
 
 If you want to route to a specific screen by clicking on notification, you can see these commits:
 
-[Add screens](https://github.com/FtADev/FCM-Example/commit/15f934c6974b19840c3202416d31eb6faa991ae8)
+1. [Add screens](https://github.com/FtADev/FCM-Example/commit/15f934c6974b19840c3202416d31eb6faa991ae8)
 
-[Handle Messages](https://github.com/FtADev/FCM-Example/commit/8914a8cdc8275cca64b35324bed14537b2045957)
+2. [Handle Messages](https://github.com/FtADev/FCM-Example/commit/8914a8cdc8275cca64b35324bed14537b2045957)
 
