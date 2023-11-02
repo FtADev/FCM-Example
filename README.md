@@ -98,3 +98,57 @@ Just follow [this commit](https://github.com/FtADev/FCM-Example/commit/23bc2f58b
 
 Thanks to [HeyFlutter](https://www.youtube.com/watch?v=k0zGEbiDJcQ)
 
+## Postman
+
+If you want to send notification from postman:
+
+Go to your project in firebase console:
+
+Project Overview->Project Settings->Cloud messaging-> Enable `Cloud Messaging API (Legacy)`
+
+![img_6.png](img_6.png)
+
+then copy the `Server Key`
+
+In Postman: 
+
+Create a new request:
+
+URL:
+
+```
+    https://fcm.googleapis.com/fcm/send
+```
+
+Method:
+
+```
+    POST
+```
+
+Header:
+
+``` 
+   "Content-Type": "application/json",
+   "Authorization": "key=<Server_key>"
+```
+
+Body:
+
+```
+    {
+     "to": "<your-device-token>",
+     "notification": {
+       "title": "Push Notification",
+       "body": "Test Push Notification",
+       "something": "somewhere"
+     },
+     "data": {
+       "title": "data title",
+       "message": "data message",
+       "something": "anotherthing"
+     }
+   }
+```
+
+(`data` part is payload)
